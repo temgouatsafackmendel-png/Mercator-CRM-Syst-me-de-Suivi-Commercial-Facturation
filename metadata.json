@@ -1,0 +1,6 @@
+{
+  "name": "Mercator CRM — Gestion Commerciale",
+  "description": "Application professionnelle de gestion commerciale pour PME : suivi des prospects, clients, pipeline d'opportunités, devis, factures, relances, journal d'audit et exports contrôlés.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

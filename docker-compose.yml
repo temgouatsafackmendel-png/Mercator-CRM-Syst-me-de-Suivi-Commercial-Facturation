@@ -1,0 +1,20 @@
+services:
+  mercator-crm:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: mercator-crm
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - DB_PATH=/app/data/mercator.sqlite
+      - RATE_LIMIT_MAX_REQUESTS=300
+      - RATE_LIMIT_EXPORT_MAX=20
+    volumes:
+      - mercator_sqlite_data:/app/data
+    restart: unless-stopped
+
+volumes:
+  mercator_sqlite_data:
